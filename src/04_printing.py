@@ -12,6 +12,15 @@ z = "I like turtles!"
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
 
-# Use the 'format' string method to print the same thing
+print(f'{x}')
+print(f'{y} {z}')
+print(f'{z}')
 
+
+# Use the 'format' string method to print the same thing
+string = format(z)
+print(string)
 # Finally, print the same thing using an f-string
+print(f'{z}')
+print(f'{x}')
+print(f'{y} {z}')
