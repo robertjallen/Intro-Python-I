@@ -13,19 +13,19 @@ print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
-x.extend(y)
-print(x)
+# x.extend(y)
+# print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
-z = y[1]
-
-# x.extend(z)
-
-# print(z)
+print(x + y[1:])
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
+
+last_y = y[1:]
+last_y_extra = last_y.insert(1, 99)
+print(x + last_y)
 
 
 # Print the length of list x
