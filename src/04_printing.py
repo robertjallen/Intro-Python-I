@@ -12,15 +12,10 @@ z = "I like turtles!"
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
 
-print(f'{x}')
-print(f'{y} {z}')
-print(f'{z}')
-
-
 # Use the 'format' string method to print the same thing
-string = format(z)
-print(string)
+
 # Finally, print the same thing using an f-string
-print(f'{z}')
-print(f'{x}')
-print(f'{y} {z}')
+
+print('x is %s, y is %0.2f, z is "%s"' % (x, y, z))
+print(('x is {}, y is {:0.2F}, z is "{}"').format(x, y, z))
+print(f'x is {x}, y is {y:0.2F}, z is "{z}"')
