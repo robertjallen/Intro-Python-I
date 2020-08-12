@@ -33,4 +33,4 @@ def f():
     print(z, x)
     z = 1
 f()
-print(dir(__builtins__))
+# print(dir(__builtins__))

@@ -31,20 +31,15 @@ import sys
 import calendar
 from datetime import datetime
 
-args = sys.argv
-print(args, len(args))
-
-if len(args) == 0:
-  month = datetime.now().month
-  year = datetime.now().year
-elif len(args) == 1:
-  month = args[0]
-  year = datetime.now().year
-elif len(args) == 2:
-  month = args[0]
-  year = args[1]  
+args = len(sys.argv)
+calendar = calendar.TextCalendar()
+year = datetime.today().year
+month = datetime.today().month
+if args == 1:
+    calendar.prmonth(year, month)
+elif args == 2:
+    calendar.prmonth(year, int(sys.argv[1]))
+elif args == 3:
+    calendar.prmonth(int(sys.argv[2]), int(sys.argv[1]))
 else:
-  print("usage")
-
-  
-print(month, year)
+    print("COMMAND MUST BE RAN IN THIS FORMAT `14_cal.py [month] [year]`")
